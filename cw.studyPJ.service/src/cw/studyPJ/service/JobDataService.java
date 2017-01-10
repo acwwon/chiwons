@@ -1,5 +1,8 @@
 package cw.studyPJ.service;
 
-public interface JobDataService {
+import cw.studyPJ.domain.JobData;
 
+public interface JobDataService {
+	
+	JobData retrieveByJobDataId(String jobDataId);
 }
