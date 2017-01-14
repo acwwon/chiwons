@@ -13,6 +13,6 @@
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/cw.studyPJ.web/build/classes"/>
-        <property name="context-root" value="cw.studyPJ.web"/>
+        <property name="context-root" value="studyPJ"/>
     </wb-module>
 </project-modules>
