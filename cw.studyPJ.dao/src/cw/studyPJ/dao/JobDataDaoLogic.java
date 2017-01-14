@@ -1,7 +1,10 @@
 package cw.studyPJ.dao;
 
+import org.springframework.stereotype.Repository;
+
 import cw.studyPJ.domain.JobData;
 
+@Repository
 public class JobDataDaoLogic implements JobDataDao{
 
 	@Override
@@ -13,10 +16,17 @@ public class JobDataDaoLogic implements JobDataDao{
 	@Override
 	public JobData retrieve(String jobDataId) {
 		
-		System.out.println("jobDataId : " + jobDataId);
-		System.out.println("HI COMMIT?!@#@#@!@ #####COMMIT!!!!!!!!!!!!!!!!!!!");
+		System.out.println("JobDAO : access");
 		
-		return null;
+		JobData jd = new JobData();
+		jd.setName("nextree");
+		jd.setLocation("가산");
+		jd.setDiscription("가면 안됨");
+		jd.setPay(2200);
+		jd.setRoute("KOSTA");
+		jd.setSize("small");
+		
+		return jd;
 	}
 
 }
