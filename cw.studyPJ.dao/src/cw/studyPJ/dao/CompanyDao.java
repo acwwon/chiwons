@@ -1,9 +1,16 @@
 package cw.studyPJ.dao;
 
-import cw.studyPJ.domain.DetailCompany;
-
+/**
+ * @author Chiwon
+ * <pre>
+ * 		Mapper : Company
+ * 				 DetailCompany
+ * 				 CompanyRoute
+ * 				 CompanyType
+ * </pre>
+ *
+ */
 public interface CompanyDao {
 	
-	void create(DetailCompany jobData);
-	DetailCompany retrieve(String jobDataId);
+
 }

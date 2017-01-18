@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="cw.studyPJ.domain.About" alias="About"/>
+		<typeAlias type="cw.studyPJ.domain.Company" alias="Company"/>
+		<typeAlias type="cw.studyPJ.domain.DetailCompany" alias="DetailCompany"/>
+		<typeAlias type="cw.studyPJ.domain.MainTitle" alias="MainTitle"/>
+		<typeAlias type="cw.studyPJ.domain.MenuTitle" alias="MenuTitle"/>
+		<typeAlias type="cw.studyPJ.domain.Profile" alias="Profile"/>
+		<typeAlias type="cw.studyPJ.domain.Project" alias="Project"/>
+		<typeAlias type="cw.studyPJ.domain.User" alias="User"/>
+		<typeAlias type="kr.pathpass.dao.handler.MonthOrYearToVarcharHandler" alias="MonthOrYearToVarcharHandler"/>
+		<typeAlias type="kr.pathpass.dao.handler.MonthToKrNameHandler" alias="MonthToKrNameHandler"/>
+	</typeAliases>
+	
+	<typeHandlers>
+		<typeHandler handler="cw.studyPJ.Handler.BooleanToYnHandler" javaType="boolean" jdbcType="CHAR" />
+		<typeHandler handler="cw.studyPJ.Handler.CompanyTypeHandler" javaType="cw.studyPJ.domain.TypeEnum" jdbcType="CHAR" />
+		<typeHandler handler="cw.studyPJ.Handler.RouteHandler" javaType="cw.studyPJ.domain.RouteEnum" jdbcType="CHAR" />
+		<typeHandler handler="cw.studyPJ.Handler.ScaleHandler" javaType="cw.studyPJ.domain.ScaleEnum" jdbcType="CHAR" />
+	</typeHandlers>
+	
+	<environments default="studyPJ">
+		<environment id="studyPJ">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver" />
+				<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+				<property name="username" value="studyPJ" />
+				<property name="password" value="123" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource="./mapper/AboutMapper.xml"/>
+		<mapper resource="./mapper/CompanyMapper.xml"/>
+		<mapper resource="./mapper/CompanyRouteMapper.xml"/>
+		<mapper resource="./mapper/CompanyTypeMapper.xml"/>
+		<mapper resource="./mapper/DetailCompanyMapper.xml"/>
+		<mapper resource="./mapper/MainTitleMapper.xml"/>
+		<mapper resource="./mapper/MenuTitleMapper.xml"/>
+		<mapper resource="./mapper/MenuTitleIntroMapper.xml"/>
+		<mapper resource="./mapper/ProfileMapper.xml"/>
+		<mapper resource="./mapper/ProjectMapper.xml"/>
+		<mapper resource="./mapper/UserMapper.xml"/>
+	</mappers>
+</configuration>
