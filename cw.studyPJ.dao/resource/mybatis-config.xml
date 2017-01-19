@@ -12,8 +12,10 @@
 		<typeAlias type="cw.studyPJ.domain.Profile" alias="Profile"/>
 		<typeAlias type="cw.studyPJ.domain.Project" alias="Project"/>
 		<typeAlias type="cw.studyPJ.domain.User" alias="User"/>
-		<typeAlias type="kr.pathpass.dao.handler.MonthOrYearToVarcharHandler" alias="MonthOrYearToVarcharHandler"/>
-		<typeAlias type="kr.pathpass.dao.handler.MonthToKrNameHandler" alias="MonthToKrNameHandler"/>
+		<typeAlias type="cw.studyPJ.Handler.BooleanToYnHandler" alias="BooleanToYnHandlerr"/>
+		<typeAlias type="cw.studyPJ.Handler.CompanyTypeHandler" alias="CompanyTypeHandler"/>
+		<typeAlias type="cw.studyPJ.Handler.RouteHandler" alias="RouteHandler"/>
+		<typeAlias type="cw.studyPJ.Handler.ScaleHandler" alias="ScaleHandler"/>
 	</typeAliases>
 	
 	<typeHandlers>

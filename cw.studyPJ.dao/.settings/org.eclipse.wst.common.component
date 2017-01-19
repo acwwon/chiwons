@@ -2,5 +2,6 @@
     <wb-module deploy-name="cw.studyPJ.dao">
         <wb-resource deploy-path="/" source-path="/src"/>
         <wb-resource deploy-path="/" source-path="/resource"/>
+        <wb-resource deploy-path="/" source-path="/test"/>
     </wb-module>
 </project-modules>

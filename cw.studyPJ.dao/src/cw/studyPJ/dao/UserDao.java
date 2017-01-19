@@ -1,5 +1,6 @@
 package cw.studyPJ.dao;
 
+import cw.studyPJ.domain.User;
 
 /**
  * @author Chiwon
@@ -9,5 +10,6 @@ package cw.studyPJ.dao;
  *
  */
 public interface UserDao {
-
+	
+	public User retrieve(String userId);
 }

@@ -1,5 +1,8 @@
 package cw.studyPJ.Mapper;
 
-public interface UserMapper {
+import cw.studyPJ.domain.User;
 
+public interface UserMapper {
+	
+	User retrieve(String userId);
 }
